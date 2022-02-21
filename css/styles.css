@@ -4256,7 +4256,7 @@ input[type="button"].btn--primary:focus {
     opacity: .8;
 }
 
-.s-testimonials h3 {
+.s-testimonials h3, h5 {
     margin-top: 0;
     color: white;
 }
@@ -4338,11 +4338,13 @@ input[type="button"].btn--primary:focus {
 }
 
 .testimonial-slider__cite strong, 
+.testimonial-slider__cite a,
 .testimonial-slider__cite span {
     font-style: normal;
 }
 
-.testimonial-slider__cite strong {
+.testimonial-slider__cite strong,
+.testimonial-slider__cite a {
     font-size: calc(var(--text-size) * 0.944);
     line-height: var(--vspace-0_5);
     color: white;
