@@ -2595,100 +2595,26 @@ input[type="button"].btn--primary:focus {
     /* left: 0; */
 }
 
-.skill-bars-fat li .progress {
-    background: var(--color-gray-3);
-    position: relative;
-    height: 100%;
-    border-radius: 3px;
-    overflow: hidden;
-    position: relative;
+.skills-categ {
+    border-bottom: none;
+    font-family: var(--font-1);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: calc(var(--text-size) * 0.7778);
 }
 
-.skill-bars-fat li .progress::before {
-    content: "";
-    display: block;
-    height: 100%;
-    background-color: var(--color-gray-18);
+.skills-detail {
+    display: inline-block;
+    font-family: var(--font-1);
+	font-size: calc(var(--text-size) * 0.7778);
+    border-bottom: none;
 }
 
-.skill-bars-fat li .percent5::before {
-    width: 5%;
-}
 
-.skill-bars-fat li .percent10::before {
-    width: 10%;
-}
-
-.skill-bars-fat li .percent15::before {
-    width: 15%;
-}
-
-.skill-bars-fat li .percent20::before {
-    width: 20%;
-}
-
-.skill-bars-fat li .percent25::before {
-    width: 25%;
-}
-
-.skill-bars-fat li .percent30::before {
-    width: 30%;
-}
-
-.skill-bars-fat li .percent35::before {
-    width: 35%;
-}
-
-.skill-bars-fat li .percent40::before {
-    width: 40%;
-}
-
-.skill-bars-fat li .percent45::before {
-    width: 45%;
-}
-
-.skill-bars-fat li .percent50::before {
-    width: 50%;
-}
-
-.skill-bars-fat li .percent55::before {
-    width: 55%;
-}
-
-.skill-bars-fat li .percent60::before {
-    width: 60%;
-}
-
-.skill-bars-fat li .percent65::before {
-    width: 65%;
-}
-
-.skill-bars-fat li .percent70::before {
-    width: 70%;
-}
-
-.skill-bars-fat li .percent75::before {
-    width: 75%;
-}
-
-.skill-bars-fat li .percent80::before {
-    width: 80%;
-}
-
-.skill-bars-fat li .percent85::before {
-    width: 85%;
-}
-
-.skill-bars-fat li .percent90::before {
-    width: 90%;
-}
-
-.skill-bars-fat li .percent95::before {
-    width: 95%;
-}
-
-.skill-bars-fat li .percent100::before {
-    width: 100%;
+.skill-entire-block{
+    margin-top: var(--vspace-1_75);
 }
 
 /* ------------------------------------------------------------------- 
@@ -3999,7 +3925,7 @@ input[type="button"].btn--primary:focus {
 
 .folio-item__thumb {
     display: block;
-    background-color: white;
+    background-color: black;
     position: relative;
     overflow: hidden;
 }
@@ -4008,7 +3934,7 @@ input[type="button"].btn--primary:focus {
     z-index: 1;
     content: "";
     display: block;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -4024,7 +3950,7 @@ input[type="button"].btn--primary:focus {
 
 .folio-item__thumb::after {
     z-index: 1;
-    content: "...";
+    content: "";
     font-family: var(--font-2);
     font-weight: 300;
     font-size: 3rem;
@@ -4052,6 +3978,17 @@ input[type="button"].btn--primary:focus {
     margin: 0;
     -webkit-transition: all, .5s;
     transition: all, .5s;
+    opacity: 0.33;
+}
+
+.folio-item .centered{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    transition: all, .5s;
 }
 
 /* on hover
@@ -4071,6 +4008,10 @@ input[type="button"].btn--primary:focus {
 .folio-item:hover .folio-item__thumb img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+.folio-item:hover .folio-item__thumb .centered {
+    font-size: 110%;
 }
 
 /* ------------------------------------------------------------------- 
