@@ -3752,6 +3752,7 @@ input[type="button"].btn--primary:focus {
     border-color: white;
     color: black;
     margin-right: 0;
+    display: none;
 }
 
 .s-about__content-bottom .btn--download svg {
@@ -3905,6 +3906,7 @@ input[type="button"].btn--primary:focus {
     background-color: var(--color-gray-1);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-5);
+    display: none;
 }
 
 .s-portfolio h3 {
