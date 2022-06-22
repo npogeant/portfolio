@@ -3906,7 +3906,6 @@ input[type="button"].btn--primary:focus {
     background-color: var(--color-gray-1);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-5);
-    display: none;
 }
 
 .s-portfolio h3 {
@@ -4259,6 +4258,7 @@ input[type="button"].btn--primary:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    filter: blur(5px);
 }
 
 .s-articles__bg::before {
