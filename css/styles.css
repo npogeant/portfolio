@@ -324,7 +324,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari. */
 
 h1 {
-    font-size: 2em;
+    font-size: 0.5em;
     margin: 0.67em 0;
 }
 
@@ -3436,7 +3436,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .s-hero__content h1 {
-    font-size: 9.8rem;
+    font-size: 6.8rem;
     font-weight: 600;
     letter-spacing: -.04em;
     line-height: 1;
@@ -3614,7 +3614,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
     .s-hero__content h1 {
-        font-size: 9.4rem;
+        font-size: 8.4rem;
     }
     .s-hero__content h3 {
         font-size: 2.2rem;
