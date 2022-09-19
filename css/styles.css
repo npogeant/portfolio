@@ -1728,7 +1728,7 @@ em, i {
 }
 
 strong, b {
-    font-family: var(--font-1);
+    font-family: var(--font-2);
     font-weight: 600;
     color: var(--color-text-dark);
 }
@@ -3392,6 +3392,8 @@ input[type="button"].btn--primary:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
 }
 
 .s-hero__bg::before {
@@ -3983,7 +3985,7 @@ input[type="button"].btn--primary:focus {
     opacity: 0.33;
 }
 
-.folio-item .centered{
+.folio-item .centered {
     top: 50%;
     position: absolute;
     left: 50%;
@@ -3991,6 +3993,18 @@ input[type="button"].btn--primary:focus {
     text-align: center;
     color: white;
     transition: all, .5s;
+}
+
+.folio-item .bottom {
+    top: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(130, 130, 130);
+    transition: all, .5s;
+    font-size: 10px;
+    line-height: 15px;
 }
 
 /* on hover
@@ -4014,6 +4028,11 @@ input[type="button"].btn--primary:focus {
 
 .folio-item:hover .folio-item__thumb .centered {
     font-size: 110%;
+}
+
+.folio-item:hover .folio-item__thumb .bottom {
+    /* font-size: 30%; */
+    top: 85%;
 }
 
 /* ------------------------------------------------------------------- 
