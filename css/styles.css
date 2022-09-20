@@ -738,11 +738,12 @@ input[type="password"], textarea {
     -ms-flex: 1 1 0%;
     -webkit-box-flex: 1;
     flex: 1 1 0%;
-    padding: 0 var(--gutter-lg);
+    /* padding: var(--gutter-lg); */
+    padding: 10px;
 }
 
 .collapse>.column, .column.collapse {
-    padding: 0;
+    padding: 10;
 }
 
 /* flex row containers utility classes
@@ -3983,6 +3984,7 @@ input[type="button"].btn--primary:focus {
     -webkit-transition: all, .5s;
     transition: all, .5s;
     opacity: 0.33;
+    filter: blur(2px);
 }
 
 .folio-item .centered {
@@ -3993,6 +3995,7 @@ input[type="button"].btn--primary:focus {
     text-align: center;
     color: white;
     transition: all, .5s;
+    font-size: small;
 }
 
 .folio-item .bottom {
