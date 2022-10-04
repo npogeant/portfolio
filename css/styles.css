@@ -4030,7 +4030,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .folio-item:hover .folio-item__thumb .centered {
-    font-size: 110%;
+    font-size: 85%;
 }
 
 .folio-item:hover .folio-item__thumb .bottom {
@@ -4206,9 +4206,9 @@ input[type="button"].btn--primary:focus {
      padding-top: var(--vspace-5);
      padding-bottom: var(--vspace-3_5);
      color: rgba(255, 255, 255, 0.8);
-     background-color: var(--color-gray-19);
+     background-color: white;
      overflow: hidden;
-     position: relative;
+     /* position: relative; */
  }
  
 .s-articles__section {
@@ -4277,11 +4277,12 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/articles-bg-3000.jpg);
+    /* background-image: url(../images/articles-bg-3000.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    filter: blur(5px);
+    /* filter: blur(5px); */
+    visibility: hidden;
 }
 
 .s-articles__bg::before {
@@ -4300,7 +4301,7 @@ input[type="button"].btn--primary:focus {
 
 .s-articles h3, h5 {
     margin-top: 0;
-    color: white;
+    color: black;
 }
 
 .s-articles__header, .s-articles__content {
@@ -4322,7 +4323,7 @@ input[type="button"].btn--primary:focus {
     max-width:250px;
     height  : 1px;
     width   : 50%;  /* or 100px */
-    border-bottom: 0.5px solid var(--color-border);
+    border-bottom: 0.5px solid black;
     margin:0 auto;
     padding:4px 0px;
 }
