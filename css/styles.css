@@ -3925,7 +3925,6 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .folio-list {
     max-width: 1180px;
-    margin-top: var(--vspace-2_5);
 }
 
 .folio-item__thumb {
@@ -4326,12 +4325,49 @@ input[type="button"].btn--primary:focus {
     border-bottom: 0.5px solid black;
     margin:0 auto;
     padding:4px 0px;
+    display: none;
 }
 
 .s-articles__content>.column:first-child {
     min-height: 0;
     min-width: 0;
 }
+
+.s-articles .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    max-width: 300px;
+    min-width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.s-articles .menu,
+    .content {
+    width: 100%;
+}
+
+.s-articles select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 150ms ease;
+    font-family: var(--font-1);
+    height: 50px;
+    text-align: center;
+}
+
+.s-articles select::-ms-expand {
+    display: none;
+ }
 
 /* ------------------------------------------------------------------- 
  * ## article block
